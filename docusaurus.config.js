@@ -6,7 +6,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: "Study",
   tagline: "Keep a record of some study documents",
-  url: "https://difranca.github.io",
+  url: "https://marknote.github.io",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -15,8 +15,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "difranca", // Usually your GitHub org/user name.
-  projectName: "difranca.github.io", // Usually your repo name.
+  organizationName: "cpcl1217", // Usually your GitHub org/user name.
+  projectName: "marknote.github.io", // Usually your repo name.
   deploymentBranch: "gh-pages",
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -38,7 +38,7 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/difranca/difranca.github.io/blob/main",
+          editUrl: "https://github.com/cpcl1217/marknote.github.io/blob/main",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -110,7 +110,7 @@ const config = {
             label: "Tech-Notes",
           },
           {
-            href: "https://github.com/difranca/difranca.github.io",
+            href: "https://github.com/cpcl1217",
             label: "GitHub",
             position: "right",
           },
