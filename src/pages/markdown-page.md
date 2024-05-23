@@ -1,7 +1,19 @@
 ---
-title: Markdown page example
+keywords: [patrick, wait]
+title: Patrick
+sidebar_label: Patirck
 ---
 
-# Markdown page example
+# Useful Picture
 
-You don't need React to write simple standalone pages.
+<br/>
+
+<div style={{textAlign: 'center'}}>
+
+<img width="550" height="400" src="/img/patrick_wait.png"/>
+
+
+</div>
+
+
+<br/>
