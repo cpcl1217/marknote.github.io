@@ -1,4 +1,3 @@
-// src/components/ChatWidget.js
 import React, { useState, useEffect, useRef } from 'react';
 import io from 'socket.io-client';
 import styles from './ChatWidget.module.css';
@@ -7,27 +6,29 @@ const ChatWidget = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
-  const socket = io('http://localhost:5000');
+  const socket = useRef(null);
   const messagesEndRef = useRef(null);
 
   useEffect(() => {
-    socket.on('connect', () => {
+    socket.current = io('http://localhost:5000');
+
+    socket.current.on('connect', () => {
       console.log('Connected to server');
     });
 
-    socket.on('chat message', (msg) => {
+    socket.current.on('chat message', (msg) => {
       console.log('Message received: ', msg);
-      setMessages((prevMessages) => [...prevMessages, { text: msg, sent: false }]);
+      setMessages((prevMessages) => [...prevMessages, { text: msg.message, id: msg.id, sent: msg.id === socket.current.id }]);
     });
 
-    socket.on('disconnect', () => {
+    socket.current.on('disconnect', () => {
       console.log('Disconnected from server');
     });
 
     return () => {
-      socket.disconnect();
+      socket.current.disconnect();
     };
-  }, [socket]);
+  }, []);
 
   useEffect(() => {
     scrollToBottom();
@@ -40,8 +41,8 @@ const ChatWidget = () => {
   const handleSend = () => {
     if (input.trim()) {
       console.log('Sending message: ', input);
-      socket.emit('chat message', input);
-      setMessages((prevMessages) => [...prevMessages, { text: input, sent: true }]);
+      socket.current.emit('chat message', input);
+      // setMessages((prevMessages) => [...prevMessages, { text: input, id: 'me', sent: true }]);
       setInput('');
     }
   };
