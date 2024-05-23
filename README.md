@@ -50,6 +50,10 @@ npm run build
 
 This will create a build directory with the optimized production files.
 
+## Backend Server
+
+This frontend application is designed to work with the backend server provided in the following repository: [my-web-backend](https://github.com/cpcl1217/my-web-backend).
+
 ## Deployment
 
 You can deploy the production build to any static file hosting service. If you are using Google Cloud Run, follow these steps:
@@ -69,11 +73,13 @@ docker push your-image-name
 Deploy the image to Google Cloud Run using the Google Cloud Console or the gcloud command line tool.
 
 ### Usage
-Navigate to the deployed application URL.
-Enter the password to log in.
-Start sending and receiving messages in the chat room.
+
+- Navigate to the deployed application URL.
+- Enter the password to log in.
+- Start sending and receiving messages in the chat room.
 
 ## Troubleshooting
+
 If you encounter CORS issues, ensure that the backend server has the appropriate CORS settings:
 
 ```javascript
@@ -83,4 +89,5 @@ app.use(cors({
 ```
 
 ## License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
