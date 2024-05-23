@@ -137,10 +137,6 @@ const config = {
                 label: "GitHub",
                 href: "https://github.com/cpcl1217",
               },
-              /*{
-                label: "CakeResume",
-                href: "https://www.cakeresume.com/me/marktsai901217",
-              },*/
             ],
           },
           {
