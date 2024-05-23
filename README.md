@@ -1,5 +1,5 @@
 
-# React Chat Application Frontend
+# Personal Website with Chat Application
 
 This repository contains the frontend for a chat application built with React and Socket.IO, as well as a personal website built using Docusaurus.
 
