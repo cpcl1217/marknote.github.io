@@ -74,9 +74,9 @@ Deploy the image to Google Cloud Run using the Google Cloud Console or the gclou
 
 ### Usage
 
-- Navigate to the deployed application URL.
-- Enter the password to log in.
-- Start sending and receiving messages in the chat room.
+1. Navigate to the deployed application URL.
+2. Enter the password to log in.
+3. Start sending and receiving messages in the chat room.
 
 ## Troubleshooting
 
