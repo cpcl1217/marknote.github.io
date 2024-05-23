@@ -10,11 +10,13 @@ This repository contains the frontend for a chat application built with React an
 
 ## Installation
 
+Run the below on the GCP terminal
+
 1. Clone the repository:
 
     ```bash
-    git clone https://your-repo-url.git
-    cd your-repo-url
+    git clone https://github.com/cpcl1217/marknote.github.io.git
+    cd marknote.github.io.git
     ```
 
 2. Install dependencies:
