@@ -74,7 +74,7 @@ Deploy the image to Google Cloud Run using the Google Cloud Console or the gclou
 
 ## Architecture
 
-![image](https://github.com/cpcl1217/marknote.github.io/assets/136040246/c63bc624-f6c5-4898-a163-3a4139a2810e width=300 height=300)
+![image](https://github.com/cpcl1217/marknote.github.io/assets/136040246/c63bc624-f6c5-4898-a163-3a4139a2810e)
 
 When users access this website, they first connect to the nearest CDN server through the CDN. This request is then routed to the External Load Balancer (LB). Due to the presence of a Web Application Firewall (WAF), the user's IP address is sent to the WAF for security checks. Once verified, the request is sent back to the External LB, which then distributes the traffic to the server. Users can then connect to the Cloud Run instance hosting the frontend via the Backend Service, successfully browsing the website. Since I have implemented a chat feature, this Cloud Run instance also hosts the backend server, primarily handling message transmission and reception.
 
