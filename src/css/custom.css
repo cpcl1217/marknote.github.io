@@ -41,7 +41,7 @@ div[class^='announcementBar_'] {
   font-weight: bold;
 }
 
-/* 导航栏右侧GitHub图标 */
+/* GitHub icon on the right side of the navigation bar */
 .header-github-link:hover {
   opacity: 0.6;
 }
