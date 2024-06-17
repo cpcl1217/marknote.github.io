@@ -96,6 +96,11 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
+      announcementBar: {
+        id: 'announcementBar-2', // Increment on change
+        content: `⭐️ If you like this website, give it a star on <a style="color: purple" target="_blank" rel="noopener noreferrer" href="https://github.com/cpcl1217/marknote.github.io">GitHub</a>⭐ `,
+        // isCloseable: false, // Whether it can be turned off
+      },
       navbar: {
         title: "My-Notes",
         logo: {
@@ -111,8 +116,9 @@ const config = {
           },
           {
             href: "https://github.com/cpcl1217",
-            label: "GitHub",
             position: "right",
+            className: 'header-github-link',
+            'aria-label': 'GitHub repository',
           },
         ],
       },
